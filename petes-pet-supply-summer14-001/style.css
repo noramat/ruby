@@ -1,0 +1,54 @@
+/* 
+ * Start by reviewing the HTML page look over the structure of the divs and sections Not that it all stacks vertically.
+ * Next add a class of container and use width and margin: 0 auto to center all of the content.
+ * Create a class of row to surround the column sections.
+ * Create a class of col-4 meant to span one-third of the space inside the row. Set its width to 33.3333%
+ * Set the col-4 class to float left.
+ * Note if you add padding or border it adds additional width and breaks the layout.
+ * Add the * { box-sizing: border-box; } to automatically include padding nd border into the width.
+ * Create an attributre selector [class*="col"] to add margin of 1% to all columns, this breaks the layout (width now adds up to over 102...%). To fix subtract the margin from the width maing the new width 32.6666% and add another attribute selector with : nth-child(1) that will remove the margin from the first column.
+ * Note that the row when given a background color is not appearing because it is collapsing do to having all its children floating. Add clearfix solution class of row to prevent it from collapsing its height. 
+ * Bonus if time, show media query solutions. Finished code is on solution branch.
+ */
+ 
+ .container {
+ 	width: 0 auto;
+ 	margin: 0 auto;
+
+ }
+.row {
+
+}
+
+
+.col-4
+{
+	width: 33.33%;
+	float: left;
+	border: 1px solid blue;
+}
+*{ 
+ 	box-sizing: border-box; 
+ }
+
+/* GLOBAL STYLES */
+
+/* GRID SYSTEM */
+
+/* Container (wrapper) wraps the content so we can center it and size it as one group. */
+
+
+  /* Row allows us group columns into vertical units (rows of collumns) */
+  
+
+    /* Assuming a 12 collumn  layout col-4 will span one third of the grid */
+    
+
+    /* Select all elements that have a class with the word "col" in it. */
+    
+
+    /* Remove the margin off the first column of any row */
+   
+
+/* DEVICE STYLES (BONUS cover if time permits add CSS media queries here. See solutions branch) */
+
